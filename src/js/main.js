@@ -70,3 +70,14 @@ $('input').on('change', function () {
 });
 
 
+$('.phone-1').on('change', function () {
+    var thisValueFormated = $(this).val().replace(/^\s+|\s+$/g, '');
+    var thisValue = $(this).val();
+    if(thisValueFormated === '' ){
+       $('.phone-2').removeClass('full');
+    } else {
+        $('.phone-2').addClass('full');
+        $('.phone-2').val(thisValue);
+    }
+});
+
