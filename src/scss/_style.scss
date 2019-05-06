@@ -436,13 +436,26 @@
   }
   input{
     width: 100%;
-    background: #FFFFFF;
+    //background: #FFFFFF;
     border: 1px solid #E8E8E8;
     border-radius: 2px;
     color: #242627;
     padding: 0 10px;
     height: 40px;
     line-height: 38px;
+    background: #FAF8F6;
+    transition: .3s;
+    &:hover{
+      border: 1px solid #09B14C;
+    }
+    &:focus{
+      background: #fff;
+      border: 1px solid #09B14C;
+    }
+    &.full{
+      background: #fff;
+      border: 1px solid #09B14C;
+    }
   }
   .btn{
     height: 40px;

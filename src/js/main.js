@@ -44,5 +44,29 @@ $(document).ready(function(){
    $('.menu__close').on('click', function () {
       $('.menu').removeClass('active');
    });
-
 });
+
+// $(document).ready(function(){
+//     $('input').each(function () {
+//        $(this).on('change', function () {
+//            var thisValue = $(this).val();
+//            if(thisValue === '' ){
+//                $(this).removeClass('full');
+//            } else {
+//                $(this).addClass('full');
+//            }
+//        });
+//     });
+// });
+
+$('input').on('change', function () {
+    var thisValue = $(this).val().replace(/^\s+|\s+$/g, '');
+    if(thisValue === '' ){
+        $(this).removeClass('full');
+        $(this).val('');
+    } else {
+        $(this).addClass('full');
+    }
+});
+
+
