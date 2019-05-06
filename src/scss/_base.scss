@@ -140,14 +140,15 @@ button{
     left: 0;
     bottom: 0;
     background: #3D752F;
-    transition: .3s;
+    transition: .2s;
   }
   &:hover{
     color: #3D752F;
     text-decoration: none;
     &:after{
-      width: 0;
-      left: 50%;
+      //width: 0;
+      //left: 50%;
+      bottom: -4px;
     }
   }
 }
@@ -245,13 +246,14 @@ button{
     //transform: translateX(0);
   }
   &__close{
-    width: 26px;
-    height: 26px;
+    width: 50px;
+    height: 50px;
     background: url("/src/img/design/ico/close.svg") no-repeat center;
     position: absolute;
-    top: 40px;
-    right: 40px;
+    top: 26px;
+    right: 26px;
     transition: .3s;
+    //border: 1px solid #000;
     &:hover{
       transform: rotate(270deg);
     }

@@ -11,6 +11,7 @@
         navText: true,
         dots: false,
         navElement: 'div'
+        // loop: true
     });
     $(".catalog-slider").on('changed.owl.carousel', function(event) {
         var items     = event.item.count;
@@ -46,18 +47,13 @@ $(document).ready(function(){
    });
 });
 
-// $(document).ready(function(){
-//     $('input').each(function () {
-//        $(this).on('change', function () {
-//            var thisValue = $(this).val();
-//            if(thisValue === '' ){
-//                $(this).removeClass('full');
-//            } else {
-//                $(this).addClass('full');
-//            }
-//        });
-//     });
-// });
+$(document).on('keyup',function(evt) {
+    if (evt.keyCode == 27) {
+        $('.menu').removeClass('active');
+    }
+});
+
+
 
 $('input').on('change', function () {
     var thisValue = $(this).val().replace(/^\s+|\s+$/g, '');

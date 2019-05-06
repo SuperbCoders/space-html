@@ -196,6 +196,7 @@
     width: 23px;
     height: 15px;
     transition: .3s;
+    position: relative;
     &:hover{
       opacity: .2;
     }
@@ -203,9 +204,17 @@
   .owl-prev{
     background: url("/src/img/design/ico/owl/prev.svg") center no-repeat;
     margin-right: 87px;
+    left: 0;
+    &:hover{
+      left: -5px;
+    }
   }
   .owl-next{
     background: url("/src/img/design/ico/owl/next.svg") center no-repeat;
+    right: 0;
+    &:hover{
+      right: -5px;
+    }
   }
 }
 
@@ -361,6 +370,15 @@
         &:last-of-type{
           margin-bottom: 0;
         }
+      }
+      &:hover{
+        //border-bottom: 1px solid #09B14C;
+      }
+      &:focus{
+        border-bottom: 1px solid #09B14C;
+      }
+      &.full{
+        border-bottom: 1px solid #09B14C;
       }
     }
   }
