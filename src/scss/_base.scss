@@ -337,34 +337,84 @@ button{
   }
 }
 
+@keyframes myWave {
+  0% { transform: translateY(0) }
+  50% { transform: translateY(30px) }
+  100% { transform: translateY(0) }
+}
+
+
+.image-block{
+  display: none;
+  //margin: 0 -20px;
+  //border: 1px solid #000;
+  @include media-breakpoint-down(sm) {
+    display: block;
+  }
+  img{
+
+  }
+}
+
 .animation-block{
   position: relative;
   width: 330px;
   height: 263px;
-  border: 1px solid #000;
+  left: 40px;
+  @include media-breakpoint-down(lg) {
+    left: 0;
+  }
+  @include media-breakpoint-down(md) {
+    left: -50px;
+  }
+  @include media-breakpoint-down(sm) {
+    left: 0;
+    display: none;
+  }
   &__item{
     position: absolute;
     top: 0;
     left: 0;
+    img{
+      transition: .3s;
+      position: relative;
+      animation: myWave 4s ease-in-out infinite;
+    }
     &--1{
       left: 0;
-      top: 209px;
-      //border: 1px solid red;
+      top: 220px;
+      img{
+        animation-delay: .1s;
+      }
     }
     &--2{
-
+      left: 50px;
+      top: 165px;
+      img{
+        animation-delay: .4s;
+      }
     }
     &--3{
-      left: 80px;
-      top: 100px;
+      left: 100px;
+      top: 110px;
+      img{
+        animation-delay: .6s;
+      }
     }
     &--4{
-
+      left: 150px;
+      top: 55px;
+      img{
+        animation-delay: .8s;
+      }
     }
     &--5{
-      left: 50px;
+      left: 200px;
       top: 0;
-      border: 1px solid #000;
+      img{
+        animation-delay: 1s;
+      }
+      //border: 1px solid #000;
     }
   }
 }
