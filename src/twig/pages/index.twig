@@ -296,15 +296,15 @@
         <div class="container">
             <div class="wrapper">
                 <h2 class="section-header">
-                    Давайте обсудим ваш будущий дом!
+                    Давайте обсудим<br> ваш будущий дом!
                 </h2>
                 <!-- /.section-header -->
                 <h3>Оставьте контакты – мы перезвоним. </h3>
                 <form class="form">
                     <div class="form__inputs">
-                        <input required type="text" class="name-2" placeholder="Имя">
-                        <input required type="text" class="phone-2" placeholder="Телефон">
-                        <input required type="text" class="mail-2" placeholder="Почта">
+                        <input required type="text" class="name-2" data-connect="name-1" placeholder="Имя">
+                        <input required type="text" class="phone-2" data-connect="phone-1" placeholder="Телефон">
+                        <input required type="text" class="mail-2" data-connect="mail-1" placeholder="Почта">
                     </div>
                     <!-- /.form__inputs -->
                     <div class="form__action">
@@ -322,18 +322,18 @@
 
     <div class="form-fix">
         <div class="container">
-            <div class="form-fix__wrap">
+            <form class="form-fix__wrap">
                 <div class="row">
                     <div class="form-fix__item">
-                        <input required type="text" class="name-1" placeholder="Имя">
+                        <input required type="text" class="name-1" data-connect="name-2" placeholder="Имя">
                     </div>
                     <!-- /.form-fix__item -->
                     <div class="form-fix__item">
-                        <input required type="text" class="phone-1" placeholder="Телефон">
+                        <input required type="text" class="phone-1" data-connect="phone-2" placeholder="Телефон">
                     </div>
                     <!-- /.form-fix__item -->
                     <div class="form-fix__item">
-                        <input required type="text" class="mail-1" placeholder="Почта">
+                        <input required type="text" class="mail-1" data-connect="mail-2" placeholder="Почта">
                     </div>
                     <!-- /.form-fix__item -->
                     <div class="form-fix__item">
@@ -342,7 +342,7 @@
                     <!-- /.form-fix__item -->
                 </div>
                 <!-- /.row -->
-            </div>
+            </form>
             <!-- /.form-fix__wrap -->
             <div class="form-fix__link">
                 <a href="#page-form">

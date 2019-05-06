@@ -59,8 +59,8 @@
   background: #FAF8F6;
   padding: 60px 100px 50px;
   @include media-breakpoint-down(sm) {
-    padding: 30px 10px;
-    margin: 0 -10px;
+    padding: 30px 20px;
+    margin: 0 -20px;
   }
   &__title{
     margin-bottom: 30px;
@@ -271,7 +271,7 @@
   padding: 70px 0 60px;
   @include media-breakpoint-down(sm) {
     padding: 30px 20px;
-    margin: 0 -10px;
+    margin: 0 -20px;
   }
   .wrapper{
     padding: 0;
@@ -372,13 +372,13 @@
         }
       }
       &:hover{
-        //border-bottom: 1px solid #09B14C;
+        border-bottom: 1px solid #09B14C;
       }
       &:focus{
-        border-bottom: 1px solid #09B14C;
+        border-bottom: 1px solid #838383;
       }
       &.full{
-        border-bottom: 1px solid #09B14C;
+        border-bottom: 1px solid #838383;
       }
     }
   }

@@ -59,25 +59,17 @@ $(document).on('keyup',function(evt) {
 
 
 
-$('input').on('change', function () {
-    var thisValue = $(this).val().replace(/^\s+|\s+$/g, '');
-    if(thisValue === '' ){
-        $(this).removeClass('full');
-        $(this).val('');
-    } else {
-        $(this).addClass('full');
-    }
-});
-
-
-$('.phone-1').on('change', function () {
+$('input').on('keyup', function () {
     var thisValueFormated = $(this).val().replace(/^\s+|\s+$/g, '');
     var thisValue = $(this).val();
+    var connected = $(this).data('connect');
+    console.log(connected);
     if(thisValueFormated === '' ){
-       $('.phone-2').removeClass('full');
+        $(this).removeClass('full');
+        $(this).val('');
+        $('.'+connected).removeClass('full').val('');
     } else {
-        $('.phone-2').addClass('full');
-        $('.phone-2').val(thisValue);
+        $(this).addClass('full');
+        $('.'+connected).addClass('full').val(thisValue);
     }
 });
-

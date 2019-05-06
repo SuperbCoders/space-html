@@ -26,6 +26,9 @@ button{
 .container{
   max-width: 1130px;
   //outline: 1px dashed #000;
+  @include media-breakpoint-down(sm) {
+    padding: 0 20px;
+  }
 }
 
 .container-fluid{
@@ -212,6 +215,12 @@ button{
     }
     .section-header{
       margin-bottom: 14px;
+      br{
+        display: none;
+        @include media-breakpoint-down(sm) {
+          display: block;
+        }
+      }
     }
     h3{
       color: #2D2E30;
@@ -239,11 +248,10 @@ button{
   @include media-breakpoint-down(sm) {
     right: -100vw;
     width: 100%;
-    padding: 100px 30px 50px 30px;
+    padding: 40px 30px 50px 30px;
   }
   &.active{
     right: 0;
-    //transform: translateX(0);
   }
   &__close{
     width: 50px;
@@ -253,7 +261,6 @@ button{
     top: 26px;
     right: 26px;
     transition: .3s;
-    //border: 1px solid #000;
     &:hover{
       transform: rotate(90deg);
     }
@@ -270,6 +277,9 @@ button{
         @include media-breakpoint-down(md) {
           margin-bottom: 20px;
           padding-bottom: 10px;
+        }
+        @include media-breakpoint-down(sm) {
+          width: 70%;
         }
         &:last-of-type{
           margin-bottom: 0;
@@ -297,6 +307,9 @@ button{
   &__footer{
     position: absolute;
     bottom: 40px;
+    @include media-breakpoint-down(sm) {
+      bottom: 80px;
+    }
     ul{
       margin: 0;
       padding: 0;
