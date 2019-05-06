@@ -10,7 +10,8 @@
         nav: true,
         navText: true,
         dots: false,
-        navElement: 'div'
+        navElement: 'div',
+        rewind: true
         // loop: true
     });
     $(".catalog-slider").on('changed.owl.carousel', function(event) {
