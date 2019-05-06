@@ -31,12 +31,16 @@ $(document).ready(function(){
 
 $(window).scroll(function() {
     var windowScroll = $(window).scrollTop();
-    if(windowScroll > 0){
-        $('.form-fix').addClass('active');
-    } else {
+    var formViev = $('.section-7').offset();
+    if(windowScroll < 50){
         $('.form-fix').removeClass('active');
+    } else if (windowScroll > formViev.top){
+        $('.form-fix').removeClass('active');
+    } else {
+        $('.form-fix').addClass('active');
     }
 });
+
 
 $(document).ready(function(){
    $('.header__menu button').on('click', function () {
@@ -48,7 +52,7 @@ $(document).ready(function(){
 });
 
 $(document).on('keyup',function(evt) {
-    if (evt.keyCode == 27) {
+    if (evt.keyCode === 27) {
         $('.menu').removeClass('active');
     }
 });

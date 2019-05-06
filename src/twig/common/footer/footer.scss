@@ -78,24 +78,26 @@
       a{
         color: rgba(36, 38, 39, 0.51);
         position: relative;
+        transition: .3s;
         @include media-breakpoint-down(sm) {
           font-size: 18px;
         }
-        &:after{
-          content: '';
-          width: 0;
-          height: 1px;
-          position: absolute;
-          left: 50%;
-          bottom: 0;
-          background: rgba(36, 38, 39, 0.51);
-          transition: .3s;
-        }
+        //&:after{
+        //  content: '';
+        //  width: 0;
+        //  height: 1px;
+        //  position: absolute;
+        //  left: 50%;
+        //  bottom: 0;
+        //  background: rgba(36, 38, 39, 0.51);
+        //  transition: .3s;
+        //}
         &:hover{
-          &:after{
-            left: 0;
-            width: 100%;
-          }
+          color: rgba(36, 38, 39, 0.7);
+          //&:after{
+          //  left: 0;
+          //  width: 100%;
+          //}
         }
       }
     }
