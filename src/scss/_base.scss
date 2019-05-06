@@ -336,3 +336,35 @@ button{
     }
   }
 }
+
+.animation-block{
+  position: relative;
+  width: 330px;
+  height: 263px;
+  border: 1px solid #000;
+  &__item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    &--1{
+      left: 0;
+      top: 209px;
+      //border: 1px solid red;
+    }
+    &--2{
+
+    }
+    &--3{
+      left: 80px;
+      top: 100px;
+    }
+    &--4{
+
+    }
+    &--5{
+      left: 50px;
+      top: 0;
+      border: 1px solid #000;
+    }
+  }
+}
