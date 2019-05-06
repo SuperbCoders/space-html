@@ -1,0 +1,78 @@
+.header{
+  padding-top: 42px;
+  padding-bottom: 15px;
+  width: 100%;
+  //position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 5;
+  @include media-breakpoint-down(sm) {
+    padding-top: 20px;
+    position: absolute;
+  }
+  &__logo{
+    @include make-col-ready();
+    @include make-col(6);
+    padding-top: 14px;
+    @include media-breakpoint-down(sm) {
+      padding-top: 0;
+    }
+  }
+  &__menu{
+    @include make-col-ready();
+    @include make-col(6);
+    //text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    button{
+      display: flex;
+      flex-direction: column;
+      width: 25px;
+      height: 30px;
+      padding: 0;
+      background: transparent;
+      //border: 1px solid #000;
+      &:hover{
+        span{
+          &:nth-of-type(1){
+            width: 31px;
+            left: -3px;
+          }
+          &:nth-of-type(2){
+            width: 19px;
+            left: 3px;
+          }
+          &:nth-of-type(3){
+            width: 31px;
+            left: -3px;
+          }
+        }
+      }
+      span{
+        position: relative;
+        transition: .1s;
+        display: block;
+        border: 1px solid #000;
+        width: 25px;
+        height: 1px;
+        background: #000000;
+        margin-bottom: 8px;
+        left: 0;
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.logo{
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: #2D2E30;
+  @include media-breakpoint-down(sm) {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+    {% set site_name = 'Space' %}
+    <title>{{ site_name }} {% if page_name %} - {% endif %} {{ page_name }}</title>
+    <meta name="description" content="">
+    <meta name="Keywords" content="">
+
+    {% set version = '?v=' ~ random() %}
+    <link rel="stylesheet" href="css/style.css{% if version %}{{ version }}{% endif %}">
+</head>
+    <body>
+
+        {% include '../common/header/header.twig' %}
+
+        {% block content %}{% endblock %}
+
+        {% include '../common/footer/footer.twig' %}
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+
+        <script defer src="js/main.js{% if version %}{{ version }}{% endif %}"></script>
+
+    </body>
+</html>
+

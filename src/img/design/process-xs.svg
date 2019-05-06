@@ -1,0 +1,31 @@
+<svg width="375" height="122" viewBox="0 0 375 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M254.5 54.5H205V41H254.5V54.5Z" stroke="black"/>
+<path d="M174.5 14.5H125V1H174.5V14.5Z" stroke="black"/>
+<path d="M125 14.5L205 54.5" stroke="black"/>
+<path d="M125 1L205 41" stroke="black"/>
+<path d="M174.5 1L254.5 41" stroke="black"/>
+<path d="M174.5 14.5L254.5 54.5" stroke="black"/>
+<path d="M364.5 121.5H315V108H364.5V121.5Z" stroke="black"/>
+<path d="M284.5 81.5H235V68H284.5V81.5Z" stroke="black"/>
+<path d="M235 81.5L315 121.5" stroke="black"/>
+<path d="M235 68L315 108" stroke="black"/>
+<path d="M284.5 68L364.5 108" stroke="black"/>
+<path d="M284.5 81.5L364.5 121.5" stroke="black"/>
+<path d="M349.5 41.5H300V28H349.5V41.5Z" stroke="black"/>
+<path d="M300 41.5L380 81.5" stroke="black"/>
+<path d="M300 28L380 68" stroke="black"/>
+<path d="M349.5 28L429.5 68" stroke="black"/>
+<path d="M349.5 41.5L429.5 81.5" stroke="black"/>
+<path d="M89.5 121.5H40V108H89.5V121.5Z" stroke="black"/>
+<path d="M9.5 81.5H-40V68H9.5V81.5Z" stroke="black"/>
+<path d="M-40 81.5L40 121.5" stroke="black"/>
+<path d="M-40 68L40 108" stroke="black"/>
+<path d="M9.5 68L89.5 108" stroke="black"/>
+<path d="M9.5 81.5L89.5 121.5" stroke="black"/>
+<path d="M168.5 87.5H119V74H168.5V87.5Z" stroke="black"/>
+<path d="M88.5 47.5H39V34H88.5V47.5Z" stroke="black"/>
+<path d="M39 47.5L119 87.5" stroke="black"/>
+<path d="M39 34L119 74" stroke="black"/>
+<path d="M88.5 34L168.5 74" stroke="black"/>
+<path d="M88.5 47.5L168.5 87.5" stroke="black"/>
+</svg>
