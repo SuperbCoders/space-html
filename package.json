@@ -2,7 +2,7 @@
   "name": "project",
   "version": "6.0.0",
   "main": "gulpfile.js",
-  "author": "Domrachew.S",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "*",
